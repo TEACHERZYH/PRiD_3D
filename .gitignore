@@ -1,0 +1,51 @@
+# ---- 编译产物 ----
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.abs
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+main.pdf
+paper_draft.docx
+paper_preview.html
+title_page.pdf
+title_page.docx
+~$*
+
+# ---- 大文件 / 数据 / 模型 ----
+*.zip
+*.exe
+*.pt
+*.pth
+*.ckpt
+*.npz
+data/
+results/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- 论文（不推送到代码仓库）----
+paper/
+
+# ---- 实验记录 / 实验计划（不推送到代码仓库，只推代码）----
+experiments/*.md
+
+# ---- 研究提案 / 方案文档（不推送到代码仓库，只推代码）----
+docs/*.md
+
+# ---- 根目录项目文档（README/AGENTS/CHANGELOG 含研究内容，不推送）----
+/*.md
+
+# ---- 临时文件 ----
+*.tmp
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
