@@ -66,6 +66,7 @@ def main():
     # 模型（输入通道 = 1 噪声 + 4 条件 = 5）
     model = UNet3D(in_channels=5, base=args.base, depth=args.depth).to(device)
     diff = Diffusion(model, timesteps=args.timesteps)
+    diff.to(device)   # Diffusion 非 nn.Module，系数张量留在 CPU，GPU 训练必须显式搬移
     opt = torch.optim.Adam(model.parameters(), lr=args.lr)
 
     n_batches = max(1, n_train // args.batch)

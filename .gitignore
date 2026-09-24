@@ -47,6 +47,9 @@ docs/*.md
 code/draw_framework.py
 code/re_render_figures.py
 
+# ---- 论文工程工具（配图/数值校验/文献抓取/LaTeX 展平，非结果复现代码）----
+code/paper_tools/
+
 # ---- 临时文件 ----
 *.tmp
 
